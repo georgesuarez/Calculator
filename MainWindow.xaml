@@ -24,8 +24,8 @@
         </Grid.RowDefinitions>
 
         <!-- Number buttons -->
-        <Button x:Name="btn7" FontSize="30" Grid.Row="2" Grid.Column="0" HorizontalAlignment="Left" Width="112" Click="btn7_Click">7</Button>
-        <Button x:Name="btn8" FontSize="30" Grid.Row="2" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="112,0,0,0" Width="113" Click="btn8_Click">8</Button>
+        <Button x:Name="btn7" FontSize="30" Grid.Row="2" Grid.Column="0" Click="btn7_Click">7</Button>
+        <Button x:Name="btn8" FontSize="30" Grid.Row="2" Grid.Column="1" Click="btn8_Click">8</Button>
         <Button x:Name="btn9" FontSize="30" Grid.Row="2" Grid.Column="2" Click="btn9_Click">9</Button>
         <Button x:Name="btn4" FontSize="30" Grid.Row="3" Grid.Column="0" Click="btn4_Click">4</Button>
         <Button x:Name="btn5" FontSize="30" Grid.Row="3" Grid.Column="1" Click="btn5_Click">5</Button>
@@ -41,6 +41,7 @@
         <Button x:Name="btnMultiply" FontSize="30" Grid.Row="3" Grid.Column="3" Click="btnMultiply_Click">*</Button>
         <Button x:Name="btnDivide" FontSize="30" Grid.Row="4" Grid.Column="3" Click="btnDivide_Click">/</Button>
         <Button x:Name="btnEquals" FontSize="30" Grid.Row="5" Grid.Column="3" Click="btnEquals_Click">=</Button>
+        <Button x:Name="btnDecimal" FontSize="30" Grid.Row="5" Grid.Column="2" Click="btnDecimal_Click">.</Button>
 
         <!-- Clear Buttons -->
         <Button x:Name="btnClearEntry" FontSize="30" Grid.Row="1" Grid.Column="0" Click="btnClearEntry_Click">CE</Button>

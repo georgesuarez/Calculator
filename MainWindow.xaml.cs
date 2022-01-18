@@ -30,7 +30,7 @@ namespace Calculator
             InitializeComponent();
         }
 
-        private void appendSameNumber(int num, long numberOne, long numberTwo, string operation)
+        private void appendNumber(int num)
         {
             if (operation == "")
             {
@@ -47,145 +47,52 @@ namespace Calculator
 
         private void btn1_Click(object sender, RoutedEventArgs e)
         {
-            if (operation == "")
-            {
-                numberOne = (numberOne * 10) + 1;
-                TextDisplay.Text = numberOne.ToString();
-            }
-            else
-            {
-                numberTwo = (numberTwo * 10) + 1;
-                TextDisplay.Text = numberTwo.ToString();
-            }
+            appendNumber(1);    
         }
 
         private void btn2_Click(object sender, RoutedEventArgs e)
         {
-            if (operation == "")
-            {
-                numberOne = (numberOne * 10) + 2;
-                TextDisplay.Text = numberOne.ToString();
-            }
-            else
-            {
-                numberTwo = (numberTwo * 10) + 2;
-                TextDisplay.Text = numberTwo.ToString();
-            }
+            appendNumber(2);
         }
 
         private void btn3_Click(object sender, RoutedEventArgs e)
         {
-            if (operation == "")
-            {
-                numberOne = (numberOne * 10) + 3;
-                TextDisplay.Text = numberOne.ToString();
-            }
-            else
-            {
-                numberTwo = (numberTwo * 10) + 3;
-                TextDisplay.Text = numberTwo.ToString();
-            }
+            appendNumber(3);
         }
 
         private void btn4_Click(object sender, RoutedEventArgs e)
         {
-            if (operation == "")
-            {
-                numberOne = (numberOne * 10) + 4;
-                TextDisplay.Text = numberOne.ToString();
-            }
-            else
-            {
-                numberTwo = (numberTwo * 10) + 4;
-                TextDisplay.Text = numberTwo.ToString();
-            }
+            appendNumber(4);
         }
 
         private void btn5_Click(object sender, RoutedEventArgs e)
         {
-            if (operation == "")
-            {
-                numberOne = (numberOne * 10) + 5;
-                TextDisplay.Text = numberOne.ToString();
-            }
-            else
-            {
-                numberTwo = (numberTwo * 10) + 5;
-                TextDisplay.Text = numberTwo.ToString();
-            }
+            appendNumber(5);
         }
 
         private void btn6_Click(object sender, RoutedEventArgs e)
         {
-            if (operation == "")
-            {
-                numberOne = (numberOne * 10) + 6;
-                TextDisplay.Text = numberOne.ToString();
-            }
-            else
-            {
-                numberTwo = (numberTwo * 10) + 6;
-                TextDisplay.Text = numberTwo.ToString();
-            }
+            appendNumber(6);
         }
 
         private void btn7_Click(object sender, RoutedEventArgs e)
         {
-            if (operation == "")
-            {
-                numberOne = (numberOne * 10) + 7;
-                TextDisplay.Text = numberOne.ToString();
-            }
-            else
-            {
-                numberTwo = (numberTwo * 10) + 7;
-                TextDisplay.Text = numberTwo.ToString();
-            }
-
+            appendNumber(7);
         }
 
         private void btn8_Click(object sender, RoutedEventArgs e)
         {
-            if (operation == "")
-            {
-                numberOne = (numberOne * 10) + 8;
-                TextDisplay.Text = numberOne.ToString();
-            }
-            else
-            {
-                numberTwo = (numberTwo * 10) + 8;
-                TextDisplay.Text = numberTwo.ToString();
-            }
-
+            appendNumber(8);
         }
 
         private void btn9_Click(object sender, RoutedEventArgs e)
         {
-            if (operation == "")
-            {
-                numberOne = (numberOne * 10) + 9;
-                TextDisplay.Text = numberOne.ToString();
-            }
-            else
-            {
-                numberTwo = (numberTwo * 10) + 9;
-                TextDisplay.Text = numberTwo.ToString();
-            }
-
+            appendNumber(9);
         }
 
         private void btn0_Click(object sender, RoutedEventArgs e)
         {
-            if (operation == "")
-            {
-                numberOne = (numberOne * 10);
-                TextDisplay.Text = numberOne.ToString();
-            }
-            else
-            {
-                numberTwo = (numberTwo * 10);
-                TextDisplay.Text = numberTwo.ToString();
-            }
+            appendNumber(0);
         }
 
         private void btnPlus_Click(object sender, RoutedEventArgs e)
@@ -280,6 +187,18 @@ namespace Calculator
             {
                 numberTwo *= -1;
                 TextDisplay.Text = numberTwo.ToString();
+            }
+        }
+
+        private void btnDecimal_Click(object sender, RoutedEventArgs e)
+        {
+            if (operation == "")
+            {
+                TextDisplay.Text = numberOne.ToString() + ".";
+            }
+            else
+            {
+                TextDisplay.Text = numberTwo.ToString() + ".";
             }
         }
     }
