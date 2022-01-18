@@ -24,31 +24,31 @@
         </Grid.RowDefinitions>
 
         <!-- Number buttons -->
-        <Button x:Name="btn7" FontSize="30" Grid.Row="2" Grid.Column="0">7</Button>
-        <Button x:Name="btn8" FontSize="30" Grid.Row="2" Grid.Column="1">8</Button>
-        <Button x:Name="btn9" FontSize="30" Grid.Row="2" Grid.Column="2">9</Button>
-        <Button x:Name="btn4" FontSize="30" Grid.Row="3" Grid.Column="0">4</Button>
-        <Button x:Name="btn5" FontSize="30" Grid.Row="3" Grid.Column="1">5</Button>
-        <Button x:Name="btn6" FontSize="30" Grid.Row="3" Grid.Column="2">6</Button>
-        <Button x:Name="btn1" FontSize="30" Grid.Row="4" Grid.Column="0">1</Button>
-        <Button x:Name="btn2" FontSize="30" Grid.Row="4" Grid.Column="1">2</Button>
-        <Button x:Name="btn3" FontSize="30" Grid.Row="4" Grid.Column="2">3</Button>
-        <Button x:Name="btn0" FontSize="30" Grid.Row="5" Grid.Column="1">0</Button> 
+        <Button x:Name="btn7" FontSize="30" Grid.Row="2" Grid.Column="0" HorizontalAlignment="Left" Width="112" Click="btn7_Click">7</Button>
+        <Button x:Name="btn8" FontSize="30" Grid.Row="2" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="112,0,0,0" Width="113" Click="btn8_Click">8</Button>
+        <Button x:Name="btn9" FontSize="30" Grid.Row="2" Grid.Column="2" Click="btn9_Click">9</Button>
+        <Button x:Name="btn4" FontSize="30" Grid.Row="3" Grid.Column="0" Click="btn4_Click">4</Button>
+        <Button x:Name="btn5" FontSize="30" Grid.Row="3" Grid.Column="1" Click="btn5_Click">5</Button>
+        <Button x:Name="btn6" FontSize="30" Grid.Row="3" Grid.Column="2" Click="btn6_Click">6</Button>
+        <Button x:Name="btn1" FontSize="30" Grid.Row="4" Grid.Column="0" Click="btn1_Click">1</Button>
+        <Button x:Name="btn2" FontSize="30" Grid.Row="4" Grid.Column="1" Click="btn2_Click">2</Button>
+        <Button x:Name="btn3" FontSize="30" Grid.Row="4" Grid.Column="2" Click="btn3_Click">3</Button>
+        <Button x:Name="btn0" FontSize="30" Grid.Row="5" Grid.Column="1" Click="btn0_Click">0</Button> 
 
         <!-- Math Buttons -->
-        <Button x:Name="Plus" FontSize="30" Grid.Row="1" Grid.Column="3">+</Button>
-        <Button x:Name="Minus" FontSize="30" Grid.Row="2" Grid.Column="3">-</Button>
-        <Button x:Name="Multiply" FontSize="30" Grid.Row="3" Grid.Column="3">*</Button>
-        <Button x:Name="Divide" FontSize="30" Grid.Row="4" Grid.Column="3">/</Button>
-        <Button x:Name="Equals" FontSize="30" Grid.Row="5" Grid.Column="3">=</Button>
+        <Button x:Name="btnPlus" FontSize="30" Grid.Row="1" Grid.Column="3" Click="btnPlus_Click">+</Button>
+        <Button x:Name="btnMinus" FontSize="30" Grid.Row="2" Grid.Column="3" Click="btnMinus_Click">-</Button>
+        <Button x:Name="btnMultiply" FontSize="30" Grid.Row="3" Grid.Column="3" Click="btnMultiply_Click">*</Button>
+        <Button x:Name="btnDivide" FontSize="30" Grid.Row="4" Grid.Column="3" Click="btnDivide_Click">/</Button>
+        <Button x:Name="btnEquals" FontSize="30" Grid.Row="5" Grid.Column="3" Click="btnEquals_Click">=</Button>
 
         <!-- Clear Buttons -->
-        <Button x:Name="ClearEntry" FontSize="30" Grid.Row="1" Grid.Column="0">CE</Button>
-        <Button x:Name="Clear" FontSize="30" Grid.Row="1" Grid.Column="1">C</Button>
-        <Button x:Name="Backspace" FontSize="30" Grid.Row="1" Grid.Column="2" Content="&lt;="></Button>
+        <Button x:Name="btnClearEntry" FontSize="30" Grid.Row="1" Grid.Column="0" Click="btnClearEntry_Click">CE</Button>
+        <Button x:Name="btnClear" FontSize="30" Grid.Row="1" Grid.Column="1" Click="btnClear_Click">C</Button>
+        <Button x:Name="btnBackspace" FontSize="30" Grid.Row="1" Grid.Column="2" Content="&lt;=" Click="btnBackspace_Click"></Button>
 
         <!-- Postive and Negative Button -->
-        <Button x:Name="btnPlusMinus" FontSize="30" Grid.Row="5" Grid.Column="0">+-</Button>
+        <Button x:Name="btnPlusMinus" FontSize="30" Grid.Row="5" Grid.Column="0" Click="btnPlusMinus_Click">+-</Button>
 
         <!-- Display Text Box -->
         <TextBox x:Name="TextDisplay" IsReadOnly="True" TextAlignment="Right" VerticalAlignment="Bottom" FontSize="30" BorderThickness="0" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4">0</TextBox>
